@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+    <title>JQuery Demo</title>
+</head>
+<body>
+    <h2>Finding Element by ID</h2>
+    <P id="id01">Hello World</P>
+    <P id="id02">Hola</P>
+    <P class = "intro" id="id03">Namaste</P>
+
+    <p id="demo"></p>
+    <!-- <script>
+        //finding elements by id and reading its text peroperty and displaying it in another paragraph
+        $(document).ready(function(){
+            var myElement = $("#id01");
+            $("#demo").text("The text from the id01 paragraph is: "+
+            myElement[0].innerHTML);
+        });
+    </script> -->
+    <!-- <script>
+        //finding element by tag name
+        $(document).ready(function() {
+            var myElementS = $("p"); // storing all p tags as an array
+            $("#demo").text("The text in the First Paragraph is:" +
+            myElementS[0].innerHTML);
+        });
+    </script> -->
+    //get element by class name
+    <script>
+        const myElement = document.querySelectorAll("p.intro"); //this is array consists of selected value
+        document.getElementById("demo").innerHTML = "The First Paragarph with Class intro is :" +
+        myElement[0].innerHTML;
+    </script>
+</body>
+</html>
